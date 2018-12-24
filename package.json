@@ -4,17 +4,20 @@
   "description": "To be done",
   "main": "index.js",
   "dependencies": {
+    "@babel/polyfill": "^7.2.5",
     "express": "^4.16.4",
     "mongoose": "^5.4.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-async-to-generator": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
     "nodemon": "^1.18.9"
   },
   "scripts": {
-    "build": "babel index.js -d dist",
+    "clear": "rm -rf dist",
+    "build": "npx babel lib -d dist --source-maps",
     "start": "npm run build && nodemon dist/index.js",
     "test": "npm run test"
   },
