@@ -1,0 +1,12 @@
+{
+  "plugins": ["unicorn", "prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "extends": ["strongloop", "prettier"],
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "parser": "babel-eslint"
+}
