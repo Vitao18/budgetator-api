@@ -33,7 +33,8 @@
     "test": "npm run test",
     "format": "npx prettier --write \"lib/**/*.js\"",
     "precommit": "lint-staged",
-    "fix": "npx eslint --fix"
+    "fix": "npx eslint --fix",
+    "lint": "npx eslint ."
   },
   "lint-staged": {
     "lib/**/*.js": [
